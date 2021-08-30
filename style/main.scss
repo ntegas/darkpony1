@@ -1,0 +1,1239 @@
+
+/* FONTS  */
+// @import url(../style/fonts.css);
+/* FONTS  End*/
+
+
+// font-family: 'Inter', sans-serif;
+
+// .tk-sofia-pro-soft { font-family: "sofia-pro-soft",sans-serif; }
+// .tk-sofia-pro { font-family: "sofia-pro",sans-serif; }
+
+*,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6, p{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+
+//  Global classes 
+
+
+    $hover-color: rgba(0, 0, 0, 0.7);
+    $text-block: #111111;
+    $date-color: #8B8B8B;
+    $grey-color: #979797;
+
+
+
+.container-fluid{
+    padding-right: var(--bs-gutter-x,2rem);
+    padding-left: var(--bs-gutter-x,2rem);
+}
+.container-manual{
+    padding-left: 14%;
+    padding-right: 14%;
+}
+
+
+.updown{
+    padding-top: 14rem;
+    padding-bottom: 8.2rem;
+}
+.updown2{
+    padding-top: 8.2rem;
+    padding-bottom: 18rem;
+}
+.updown3{
+    padding-top: 6.25rem;
+    padding-bottom: 8.75rem;
+}
+.menu-text{
+    font-family: "sofia-pro",sans-serif;
+    // font-weight: 500;
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 1.86px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #000!important;
+    position: relative;
+}
+  .logo-text{
+    font-family: "sofia-pro",sans-serif;
+    font-weight: 500;
+    // font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 2px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: black;
+  }
+  .img-title{
+    font-family: "sofia-pro",sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 0.92px;
+    line-height: 18px;
+    color: black;
+    text-transform: uppercase;
+    position: relative;
+    width: max-content;
+    &::after{
+        content: '';
+        position: absolute;
+        height: 1px;
+        width: 110%;
+        background: $hover-color;
+        left: -5%;
+        top: 45%;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 500ms ease;
+         }
+    }
+
+  .block-text{
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      letter-spacing: 1.2px;
+      line-height: 30px;
+      color:  $text-block;
+      text-transform: none;
+      margin-top: 1rem;
+      
+  }
+
+  .copyright-text{
+        font-family: "sofia-pro",sans-serif;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: .92px;
+        line-height: 18px;
+        color: black;
+        text-transform: uppercase;
+  }
+
+  .page-title{
+      font-family: "sofia-pro",sans-serif;
+      font-weight: 500;
+    //   font-weight: 600;
+      font-size: 22px;
+      letter-spacing: 1.69px;
+      line-height: 34px;
+      text-transform: uppercase;
+      text-align: center;
+      color: #000;
+  }
+  .sub-text{ 
+    font-family: "sofia-pro",sans-serif;
+    // font-weight: 500;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 1.08px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color:  $text-block;
+    position: relative;
+    // display:inline-block;
+    // width: min-content;
+    // &::after{
+    //     content: '';
+    //     position: absolute;
+    //     height: 1px;
+    //     width: 102%;
+    //     background: $hover-color;
+    //     left: -1%;
+    //     top: 50%;
+    //     transform: scaleX(0);
+    //     transform-origin: left;
+    //     transition: transform 500ms ease;
+    // }
+  }
+
+  .text-label{
+      font-family: "sofia-pro",sans-serif;
+      text-transform: lowercase;
+      font-weight: 500;
+    //   font-weight: 600;
+      font-size: 14px;
+      letter-spacing: 1.8px;
+      line-height: 22px;
+      color: $text-block;
+  }
+
+  .gallery-tab-text{
+    font-family: "sofia-pro",sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.92;
+    color: rgba(0, 0, 0, 0.32);
+    text-decoration: none;
+    text-transform: uppercase;
+    position: relative;
+    width: max-content;
+    &::after{
+        content: '';
+        position: absolute;
+        height: 1px;
+        width: 110%;
+        background: $hover-color;
+        left: -5%;
+        top: 50%;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 500ms ease;
+    }
+    &:hover{
+        color: #000;
+        &::after{
+        transform: scaleX(1);
+        }
+    }
+    &:active{
+        color: #000;
+        &::after{
+        transform: scaleX(1);
+        }   
+    }
+}
+.price-text{
+    font-family: "sofia-pro",sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    // font-weight: 600;
+    letter-spacing: 0;
+    line-height: 31px;
+}
+.contact-text{
+    font-family: "sofia-pro",sans-serif;
+    font-weight: 500;
+    // font-weight: 600;
+    font-size: 16px;
+    line-height: 39px;
+    letter-spacing: 1.23px;
+    color: #111111;
+}
+
+.btn-black{
+
+    font-family: "sofia-pro",sans-serif;
+    text-transform: lowercase;
+    font-size: 14px;
+    letter-spacing: 1.8px;
+    line-height: 22px;
+    color: $text-block;
+
+    display: block;
+    padding: 1.3rem 6.75rem;
+    border: 2px solid #000;
+    background: #000;
+    color: white;
+    position: relative;
+    transition: background 200ms linear;
+    &::after{
+        content: '';
+        height: 10px;
+        width: 18px;
+        display: block;
+        height: 10px;
+        width: 18px;
+        background-image: url(../assets/icons/white-arrow.svg);
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 45%;
+        right: 3rem;
+        transition: right 200ms linear;
+  }
+  &:hover{
+      background:transparent;
+      color: #000;
+      &::after{
+          background-image: url(../assets/icons/black-arrow.svg);
+          right: 4rem;
+      }
+  }
+}
+
+
+//   Global Classes
+
+
+/* NAVIGATION  */
+.navbar{
+    padding-top: 1.7rem;
+    padding-bottom: 1.7rem;
+}
+
+// header .navbar-nav{
+//     width: 45%;
+//     justify-content: space-between;
+// }
+
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(0, 0, 0);
+    position: relative;
+    width: max-content;
+}
+// .navbar-light .navbar-nav .nav-link{
+//     padding-left:5%;
+//     padding-right:5%;
+//   }
+
+.navbar-expand-lg .navbar-nav .nav-link{
+    padding-right: 0;
+    padding-left: 0;
+    margin-left:1em;
+    margin-right:1em;
+}
+
+.navbar-light .navbar-nav .nav-link::after{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background: $hover-color;
+    left: 0;
+    top: 50%;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 500ms ease;
+}
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link,
+.navbar-light .navbar-nav .nav-link.active::after{
+    color: rgba(0, 0, 0, 0.7);
+    transform: scaleX(1);
+
+}
+
+.navbar-light .navbar-nav .nav-item:focus .nav-link::after , .navbar-light .navbar-nav .nav-item:hover .nav-link::after{
+    transform: scaleX(1);
+}
+
+
+.navbar-toggler:hover, .navbar-toggler:focus{
+    box-shadow: 0px 0px 0px 1px rgba(173, 173, 173, 0.76);
+}
+
+.navbar-light .navbar-toggler-icon{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 1%29' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+
+}
+
+/* NAVIGATION End */
+
+// Main logo landing page 
+
+section.main-logo{
+
+    .main-logo-inner{
+        margin-top: 5rem;
+    }
+}
+// Main logo landing page 
+
+
+/* Image gallery  */
+.card-columns{
+    // columns: 3;
+    column-count: 3;
+    column-gap: 1.25rem;
+
+    // orphans: 1;
+    // widows: 1;
+
+    .card{
+        width: 100%;
+        border: none;
+        display: inline-block;
+        overflow: hidden;
+        margin-bottom: 3.5rem;
+        transition: transform 100ms ease-in;
+        &:hover{
+            transform: scale(0.99);
+            .img-title{
+                color: $hover-color;
+            }
+            .img-title::after{
+                transform: scaleX(1);
+            }
+            
+            
+        }
+        .img-card{
+            flex-shrink: 0;
+            width: 100%;
+            height: auto;
+        }
+        img, .img-title{
+            cursor: pointer;
+            
+        }
+
+        .block-text{
+            padding: 4rem 0;
+        }
+    }
+
+    .card-text:hover{
+        box-shadow: none;
+        text-decoration: none;
+        transform: none;
+
+    }
+}
+
+/* Image gallery  end*/
+
+
+
+
+
+/* Footer  */
+
+footer{
+    .footer-inner{
+        align-items: center;
+        .footer-item{
+            width: 33.333%;
+            min-width: 300px;
+            margin-top: 1rem;
+            .social-wrap{
+                a{
+                    margin-left: 1rem !important;
+                    text-decoration: none;
+                    &:first-child{
+                        margin-left: 0 !important;
+                    }
+                    svg{
+                        width: 20px;
+                        height: 18px;
+                        transition: transform .3s linear;
+                        &:hover{
+                            transform: scale(1.1);
+                            fill: $hover-color;
+
+                        }
+                    }
+                    
+                    img{
+                        height: 18px;
+                        transition: transform .3s linear;
+                        &:hover{
+                            transform: scale(1.1);
+                        }
+
+
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+/* Footer End*/
+
+
+// RESIDERNTAL ***** / artistic bio**************************************
+main{
+    .biografy{
+        .bio{
+            
+            .bio-title{
+                margin-top: 130px;
+            }
+            .bio-intro{
+                margin-top: 160px;
+                max-width: 45%;
+                text-align: left;
+            }
+            .block-text-area{
+                position: relative;
+                padding-top: 65px;
+                padding-bottom: 84px;
+
+                .block-text{
+                    margin-left: 25%;
+                }
+                .arrow-down{
+                    width: 18px;
+                    height: auto;
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                    transition: all 200ms linear;
+                    &:hover{
+                        bottom: 10px;
+                    }
+    
+                }
+
+            }
+            
+            
+        }
+    }
+
+
+    .residental-gallery{
+        padding-top: 153px;
+        padding-bottom: 350px;
+        .residental-gallery-intro{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 35px;
+            row-gap: 40px;
+
+            .residental-card{
+
+                transition: transform 100ms ease-in;
+                &:hover{
+                    transform: scale(.99);
+                    .img-title::after{
+                        transform: scaleX(1);
+
+                    }
+                }
+
+                .residental-img{
+                    width: 100%;
+                    height: auto;
+                }
+
+            }
+        }
+    }
+}
+
+
+
+
+// RESIDENTAL END ****************************************
+
+
+// ARTISTIC GALLERY*************************************
+
+section.artistic-gallery{
+    padding-bottom: 10rem;
+    .artistic-gallery-tabs{
+        padding: 6rem 0 1.5rem;
+        display: flex;
+        max-width: 388px;
+        justify-content: space-between;
+        
+        .artistic-tab-item{
+            // margin: 10px 0 10px 0;
+
+            button {
+                // margin: 0 5px 0 5px;
+                border: none;
+                background: none;
+
+            }
+        }
+    }
+
+    .artistic-gallery-img{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 35px;
+        row-gap: 40px;
+        .artistic-card{
+            transition: transform 100ms ease-in;
+            &:hover{
+                transform: scale(.99);
+                .img-title::after{
+                    transform: scaleX(1);
+
+                }
+            }
+            .artistic-img{
+                width: 100%;
+            }
+
+
+        }
+    }
+}
+
+// BUTTON ACTIVE //
+.gallery-tab-text.active, .gallery-tab-text.active::after{
+    color: #000;
+    transform: scaleX(1);
+}
+
+
+
+// ARTISTIC GALLERY END ********************************
+
+// PROJECT PAGE *****************************
+
+.project-date{
+    grid-area: left1;
+}
+.project-name{
+    grid-area: right1;
+}
+.project-type{
+    grid-area: right2;
+}
+.project-location{
+    grid-area: right3;
+}
+.project-btn{
+    grid-area: right4;
+}
+
+
+
+
+.project-signature{
+    display: grid;
+    grid-template-columns: 165px 1fr;
+    grid-template-areas: 
+    "left1 right1"
+    ". right2"
+    ". right3"
+    ". right4";
+
+    .project-btn{
+ 
+        position: relative;
+        width: max-content;
+        margin-top: 6rem;
+        margin-left: auto;
+        a{
+            color: $text-block;
+            padding-right: 2.5rem;
+
+
+            &:hover{
+                img{
+                    left: 110px
+                };
+
+            }
+
+            img{
+                position: absolute;
+                top:20%;
+                left: 120px;
+                transform: rotate(-90deg);
+                transition: all 200ms linear;
+                
+            }
+        }
+    }
+}
+
+// Project PAGE IMAGE GALLERY ******
+.project-img-gallery{
+    display: grid;
+    grid-template-columns: 100%;
+    row-gap: 310px;
+    justify-items: center;
+
+    .project-img{
+        width: 75%;
+        height: auto;
+    }
+
+}
+.project-img:nth-child(3n-1){
+margin-right: auto !important;
+}
+.project-img:nth-child(3n){
+margin-left: auto !important;
+}
+
+// Project PAGE IMAGE GALLERY END******
+// PRODUCT PAGE END-********************
+
+// PRINT _ SHOP *****************************
+
+section.price-page-block{
+    display: grid;
+    grid-template-columns: 55% 1fr;
+    column-gap: 72px;
+
+    .price-page-info{
+        h1{
+            text-align: left;
+        }
+    }
+    
+    .pricing-wrapper{
+        margin: 3.5rem 0;
+
+        .pricing-block{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 1.4rem;
+            padding-bottom: .7rem;
+            position: relative;
+            &::after{
+                content: '';
+                width: 100%;
+                height: 1px;
+                background: #979797;
+                position: absolute;
+                bottom: 0;
+
+            }
+
+            .price{
+                margin-top: auto;
+            }
+        }
+    }
+
+    button.btn-black{
+        margin-top: 3.1rem;
+        
+    }
+    
+}
+
+// PRINT _ SHOP END**************************
+
+// BIO PAGE **************************
+
+section.bio-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 67px;
+    .biografy-info{
+        margin-top: auto;
+
+        h1{
+            text-align: left;
+        }
+        .block-text-area{
+            margin-top: 70px;
+        }
+
+    }
+
+
+}
+
+// BIO PAGE END **************************
+
+// PRESS PAGE *********************************
+
+section.press{
+    .press-intro{
+        margin-top: 5.8rem;
+        .press-item{
+            position: relative;
+            padding-right: 40px;
+            padding: .3rem 0;
+            margin-top: 2rem;
+            transition: all 500ms ease-in;
+
+            &:hover{
+                .press-title{
+                    padding-left: 1rem;
+                }
+                &::before{
+                    transform: scaleX(1);
+                }
+                img{
+
+                    right: 10px;
+                }             
+            }
+
+            &::after{
+                content: '';
+                width: 100%;
+                height: 1px;
+                background: #979797;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+            // &::before{
+            //     content: '';
+            //     width: 100%;
+            //     height: 1px;
+            //     background: #979797;
+            //     position: absolute;
+            //     top: 0;
+            //     left: 0;
+            //     transform: scaleX(0);
+            //     transform-origin: left;
+            //     transition: transform 200ms ease-in;
+            // }
+            .press-date{
+                color: $date-color;
+            }
+            .press-title{
+                padding: .5rem 0;
+                transition: all 500ms ease;
+            }
+            img{
+                width: 18px;
+                height: auto;
+                position: absolute;
+                right: 0;
+                top: 50%;   
+                transition: all 500ms ease;
+            }
+        }
+    }
+}
+
+// PRESS PAGE END******************************
+
+// CONTACT PAGE *********************************
+
+section.contact{
+    h1{
+        text-align: left;
+    }
+    .contact-intro{
+        margin-top: 7rem;
+        display: grid;
+        grid-template-columns: 40% 1fr;
+        column-gap: 70PX;
+        .contact-info{
+            margin-top: 2.3rem;
+            margin-bottom: 3.5rem;
+            span{
+                padding-top: 1rem;
+            }
+        }
+        .contact-form{
+
+            input, textarea{
+                text-transform: uppercase;
+                width: 100%;
+                border-top: none;
+                border-left: none;
+                border-right: none;
+                border-bottom: 1px solid #979797;
+                outline: none;
+                height: 40px;
+                margin-top: 3rem;
+                &::placeholder{
+
+                    color: $grey-color;
+                }
+            }
+            button{
+                margin-top: 10rem;
+                margin-left: auto;
+                display: block;
+            }
+
+
+        }
+    }
+}
+
+// CONTACT PAGE END *****************************
+
+
+/* ***************** @ MEDIA ************ */
+
+
+/* ******** 1200 px ********** */
+
+@media (max-width: 1200px){
+
+    .container-manual{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link{
+        // padding-right: 1rem;
+        // padding-left: 1rem;
+        margin-left:0 !important;
+        margin-right:0 !important;
+    }
+
+// PRINT SHOP PAGE 
+
+// PRINT _ SHOP PAGE ******************
+section.price-page-block{
+    column-gap: 45px;
+}
+// PRINT SHOP PAGE END
+
+// BIO PAGE *****************
+section.biografy{
+    column-gap: 45px;
+
+}
+
+// BIO PAGE *****************
+
+
+
+}
+/* ******** 1200 px  END********** */
+
+
+/* ******** 992 px ********** */
+
+@media (max-width: 992px){
+
+
+    // Navigation 
+        .navbar-nav{
+            width: 100%
+        }
+
+
+       
+// navigation end 
+
+
+
+
+/* Footer  */
+footer{
+    .footer-inner{
+        .footer-item{
+            width: 100% !important;
+            text-align: center;
+        }
+    }
+}
+
+/* Footer End */
+
+
+/* Image gallery  */
+.card-columns{
+    column-count: 2;
+
+}
+
+/* Image gallery  end*/
+// RESIDENTAL PAGE***********
+main{
+    .biografy{
+        .bio{
+            // position: relative;
+            .bio-title{
+                margin-top: 100px;
+            }
+            .bio-intro{
+                margin-top: 110px;
+                max-width: 60%;
+            }
+            .block-text-area{
+                padding-top: 60px;
+                padding-bottom: 63px;
+            }
+            
+        }
+    }
+
+    .residental-gallery{
+        padding-top: 70px;
+        padding-bottom: 120px;
+        .residental-gallery-intro{
+            grid-template-columns:1fr 1fr;
+        }
+    }
+}
+
+
+// Artistic gallery *****
+
+section.artistic-gallery{
+    .artistic-gallery-img{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+// Artistic gallery end *****
+
+
+// PRINT _ SHOP PAGE ******************
+section.price-page-block{
+    grid-template-columns: 100%;
+    .price-page-info{
+        margin-top: 4.8rem;
+    }
+    button{
+          margin: 3.1rem auto 0;
+    }
+}
+// PRINT _ SHOP PAGE END ******************
+
+// BIO PAGE ***************************
+
+section.bio-section{
+    grid-template-columns: 100%;
+
+    .biografy-info{
+        margin-top: 6.25rem;
+
+        h1{
+            text-align: left;
+        }
+        .block-text-area{
+            margin-top: 70px;
+        }
+
+    }
+
+
+}
+
+// BIO PAGE END ***************************
+
+
+
+// CONTACT PAGE **********************
+
+section.contact{
+    .contact-intro{
+        margin-top: 6rem;
+        grid-template-columns: 100%;
+        .contact-form{
+            button{
+                margin: 10rem auto 0;
+            }
+        }
+    }
+}
+
+// CONTACT PAGE  END**********************
+
+}
+
+
+ /* ***********  768 px ********* */
+
+
+@media (max-width: 768px) {
+// GENERAL ******
+// .container-manual{
+//     padding-left: 10%;
+//     padding-right: 10%;
+// }
+
+.updown{
+    padding-top: 9.3rem;
+    padding-bottom: 5.9rem;
+}
+
+.updown2{
+    padding-top: 5.4rem;
+    padding-bottom: 9.3rem;
+}
+
+// Cards 
+.card-columns .card{
+    margin-bottom: 3.5rem;
+}
+
+    .card-columns .card .block-text{
+        margin-top: 0;
+    }
+
+// Cards order 
+
+    .card-columns{
+        column-count: auto;
+        
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    #card-1{
+        order: 2;
+    }
+    #card-2{
+        order: 5;
+    }
+    #card-3{
+        order: 8;
+    }
+    #card-4{
+        order: 11;
+    }
+    #card-5{
+        order: 14;
+    }
+    #card-6{
+        order: 1;
+    }
+    #card-7{
+        order: 4;
+    }
+    #card-8{
+        order: 7;
+    }
+    #card-9{
+        order: 10;
+    }
+    #card-10{
+        order: 13;
+    }
+    #card-11{
+        order: 12;
+    }
+    #card-12{
+        order: 3;
+    }
+    #card-13{
+        order: 6;
+    }
+    #card-14{
+        order: 9;
+    }
+    #card-15{
+        order: 15;
+    }
+    #card-16{
+        order: 16;
+    }
+
+
+// RESIDENTAL PAGE ********
+
+    .residental-gallery-intro{
+        grid-template-columns: 100% !important;
+
+    }
+// RESIDENTAL PAGE  END********
+
+
+// ARTISTIC COLUMNS 
+
+section.artistic-gallery{
+    .artistic-gallery-img{
+        grid-template-columns: 100% !important;
+
+    }
+}
+
+// ARTISTIC COLUMNS END *********
+
+// PROJECT IMG  GALLERY ********
+section.project-img-gallery{
+    row-gap: 100px;
+
+    .project-img{
+        width: 100% !important;
+
+    }
+}
+
+
+// PROJECT IMG  GALLERY ********
+    
+}
+
+@media (max-width: 576px) {
+
+
+    // navbar
+    .navbar .navbar-brand img{
+        width: 34px;
+        height: 40px;
+    }
+
+    /* Global classes  */
+    .container-fluid, .container-manual{
+        padding-right: var(--bs-gutter-x,1rem);
+        padding-left: var(--bs-gutter-x,1rem);
+    }
+
+
+    .gallery-tab-text,
+    .gallery-tab-text.active,
+    .gallery-tab-text.active::after{
+        font-size: 11px;
+
+    }
+
+    // BTN ****
+    .btn-black{
+        padding: 1.3rem 5rem;
+        &::after{
+              right:2rem;
+      }
+      &:hover{
+
+          &::after{
+                  right: 3rem;
+          }
+        }
+    }
+    // BTN END****
+
+
+    /* Global classes end */
+
+/* IMAGE GALLERY HOME PAGE */
+
+    .card-columns .card {
+        margin-bottom: 2.5rem;
+
+    }
+/* IMAGE GALLERY  HOME PAGE End */
+
+
+
+    // RESIDENTAL PAGE***********
+main{
+    .biografy{
+        .bio{
+            .bio-title{
+                margin-top: 87px;
+            }
+            .bio-intro{
+                margin-top: 87px;
+                max-width: 80%;
+            }
+            .block-text-area{
+                position: relative;
+                padding-top: 60px;
+                padding-bottom: 63px;
+                .block-text{
+                    margin-left: 10%;
+
+                }
+            }
+            
+        }
+
+    }
+
+
+        // RESIDENTAL PAGE END***********
+
+}
+// PRODUCT PAGE **********
+.project-signature{
+    grid-template-columns: 140px 1fr;
+}
+// PRODUCT PAGE END**********
+
+}
+
+
+/* ***************** @ MEDIA ************ */
+
+
